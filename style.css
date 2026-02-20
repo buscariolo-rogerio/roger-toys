@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url("imagens/fundo-espacial.svg") center/cover no-repeat;
+}
+
+/* HEADER */
+header {
+    background: #000;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+header img {
+    height: 80px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 200px 500px 1fr;
+    align-items: center;
+    padding: 0 80px;
+}
+
+/* LEFT */
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-left img {
+    width: 90px;
+}
+
+/* CENTER */
+.hero-center {
+    display: flex;
+    justify-content: center;
+}
+
+.produto {
+    width: 550px;
+    filter: drop-shadow(0 0 35px #ff00ff);
+}
+
+/* RIGHT */
+.hero-right h1 {
+    font-size: 24px;
+    color: #ff2dfc;
+    margin-bottom: 20px;
+}
+
+.hero-right h2 {
+    font-size: 32px;
+    color: #ffd400;
+    margin-bottom: 25px;
+}
+
+.hero-right button {
+    width: 280px;
+    height: 65px;
+    background: #ff2dfc;
+    border: none;
+    border-radius: 18px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.hero-right p {
+    width: 420px;
+    font-size: 14px;
+    color: #6fe7ff;
+}
+
+/* DIVISOR */
+hr {
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+}
+
+/* ACESSÓRIOS */
+.acessorios {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.acessorios h1 {
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.acessorios img {
+    width: 900px;
+}
+
+/* VERSÕES */
+.versoes {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.versoes h1 {
+    font-size: 42px;
+    margin-bottom: 70px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.card img {
+    width: 240px;
+}
+
+.card span {
+    display: block;
+    margin-top: 15px;
+    color: #00e5ff;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+footer img {
+    width: 55px;
+}
+
+/* ================= HOVER GLOBAL ================= */
+
+/* links */
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #00e5ff;
+}
+
+/* botão principal */
+.hero-right button {
+    transition: 0.3s;
+}
+
+.hero-right button:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px #ff2dfc;
+}
+
+/* cards das versões */
+.card img {
+    transition: 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 20px #00e5ff);
+}
+
+/* imagens laterais */
+.hero-left img {
+    transition: 0.3s;
+}
+
+.hero-left img:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background: #000;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+footer a:hover {
+    color: #00e5ff;
+}
+
+footer img {
+    width: 55px;
+}
